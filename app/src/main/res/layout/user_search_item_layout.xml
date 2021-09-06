@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_profile">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/profile_image"
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_toEndOf="@+id/profile_image"
+            android:text="user name"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/message_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:textColor="#9f9f9f"
+            android:layout_marginTop="3dp"
+            android:textSize="18sp"
+            android:layout_toEndOf="@+id/profile_image">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#66cdaa"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="8dp"
+        android:textSize="16sp"
+        android:layout_alignParentRight="true">
+
+    </TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_online"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@id/profile_image"
+        android:layout_marginTop="-18dp"
+        android:layout_marginLeft="-18dp"
+        android:layout_toEndOf="@id/profile_image"
+        android:src="#05df29"
+        android:visibility="gone"
+        >
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_offline"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@id/profile_image"
+        android:layout_marginTop="-18dp"
+        android:layout_marginLeft="-18dp"
+        android:layout_toEndOf="@id/profile_image"
+        android:src="#bfbfbf"
+        android:visibility="gone"
+        >
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+</RelativeLayout>

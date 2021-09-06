@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="295dp"
+    android:layout_height="wrap_content"
+    android:padding="9dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/profile"
+
+        >
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <RelativeLayout
+        android:id="@+id/rv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/profile_image"
+        android:background="@drawable/background_left"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="2dp"
+        >
+
+        <TextView
+            android:id="@+id/show_text_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="testing msg"
+            android:textSize="18sp"
+            android:padding="6dp"
+            android:textColor="@color/colorPrimaryDark"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/show_text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/show_text_message"
+            android:text="time"
+            android:textSize="12sp"
+            android:padding="6dp"
+            android:textColor="@color/colorGrey"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/profile_image"
+        >
+
+        <ImageView
+            android:id="@+id/left_image_view"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/show_image_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="200dp"
+            android:textColor="@color/colorGrey"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/text_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_message"
+        android:text="seen"
+        android:visibility="gone"
+        >
+
+    </TextView>
+
+</RelativeLayout>
